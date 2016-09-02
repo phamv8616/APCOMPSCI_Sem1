@@ -1,0 +1,67 @@
+
+Notes 01
+
+-Set up file by creating a text file on the desktop
+-Rename the file so it ends in “.java”
+ -ex: firstProg.java
+-Drag that file into notepad++
+-Type out:
+
+public class -insert the file name here- (Has to be typed out exactly as it’s named)
+{
+	public static void main(String[]args)
+	{
+		System.out.println(“Hello World”);
+	}
+}
+
+-Remember to save after you’re done
+
+COMPILE:
+
+-Need to compile it into byte code that java can interpret 
+
+Plugins->Plugin manager->Show Plugin Manager
+
+-will say “Downloading plugin list…”
+- scroll down and select NPPExec->Install->(pop-up)Yes->(pop-up)Yes
+
+Plugins->NppExec->Execute
+
+Underneath Commands, write:
+//save the file
+NPP_SAVE
+
+//change to the current directory
+cd "$(CURRENT_DIRECTORY)"
+
+//tell notepad++ where java is
+C:\Program Files\Java\jdk1.8.0_05\bin\javac $(FILE_NAME)
+
+Click save->Script name: JAVACOMPILE->save->okay
+
+-class file will appear on the desktop
+
+
+
+EXECUTE:
+
+Plugins->NppExec->Execute->temporary script
+
+Underneath commands, write:
+//save the file
+NPP_SAVE
+
+//change to the current directory
+cd "$(CURRENT_DIRECTORY)"
+
+//tell notepad++ where java is
+C:\Program Files\Java\jdk1.8.0_05\bin\java $(FILE_NAME)
+
+-name it and save it as JAVAEXECUTE
+
+-if you want quotes to appear in what’s printed out… put a backslash in front of it
+
+-ex: System.out.print.ln(“  \”\”  \”\” “);
+
+-Hit f6 to compile and execute for it to print out
