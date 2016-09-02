@@ -1,4 +1,4 @@
-public class labbc
+public class ASCIIART1
 {
 	public static void main(String[]args)
 	{
