@@ -17,6 +17,11 @@ public class -insert the file name here- (Has to be typed out exactly as it’s na
 
 -Remember to save after you’re done
 
+
+
+
+
+
 COMPILE:
 
 -Need to compile it into byte code that java can interpret 
@@ -44,6 +49,10 @@ Click save->Script name: JAVACOMPILE->save->okay
 
 
 
+
+
+
+
 EXECUTE:
 
 Plugins->NppExec->Execute->temporary script
@@ -65,3 +74,78 @@ C:\Program Files\Java\jdk1.8.0_05\bin\java $(FILE_NAME)
 -ex: System.out.print.ln(“  \”\”  \”\” “);
 
 -Hit f6 to compile and execute for it to print out
+
+
+
+
+
+ESCAPE KEYS:
+
+Certain characters have specific function that they carry out. They can often be problematic when typing code.
+These problem characters include:
+
+	<
+	>
+	"
+	'
+	\
+	&
+
+To fix this, you put a backslash in front:
+
+\t	Inserts a tab in the text at this point.
+\b	Inserts a backspace in the text at this point.
+\n	Inserts a newline in the text at this point.
+\r	Inserts a carriage return in the text at this point.
+\f	Inserts a form feed in the text at this point.
+\'	Inserts a single quote character in the text at this point.
+\"	Inserts a double quote character in the text at this point.
+\\	Inserts a backslash character in the text at this point.
+
+
+
+
+
+ASII Art:
+
+
+It is a graphic design that is created by compiling characters to make text art
+
+
+An example would be:
+
+
+X X X X X X X X X X X X X X X X X X X X X X X X X X
+X                                                 X
+X                     0   0                       X
+X                     |   |                       X
+X                 ____|___|____                   X
+X              0  |~ ~ ~ ~ ~ ~|   0               X
+X              |  |           |   |               X
+X           ___|__|___________|___|__             X
+X           |/\/\/\/\/\/\/\/\/\/\/\/|             X
+X       0   |       H a p p y       |   0         X
+X       |   |/\/\/\/\/\/\/\/\/\/\/\/|   |         X
+X     __|___|_______________________|___|__       X
+X     |/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/|       X
+X     |                                   |       X
+X     |         B i r t h d a y! ! !      |       X
+X     | ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ |       X
+X     |___________________________________|       X
+X                                                 X
+X X X X X X X X X X X X X X X X X X X X X X X X X X
+
+You can enter each row of the ASCII art in the
+
+System.out.prinln(" insert here ");
+System.out.prinln(" insert here ");
+System.out.prinln(" insert here ");
+System.out.prinln(" insert here ");
+System.out.prinln(" insert here ");
+
+
+
+
+
+
+
