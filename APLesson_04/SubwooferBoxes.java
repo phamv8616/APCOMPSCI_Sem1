@@ -14,15 +14,14 @@ public class SubwooferBoxes
 		System.out.println("Input width in inches:");
 		double w = keyboard.nextDouble();
 		
-		double vol = calc.calcVol (double h, double l, double w);
-		
-		System.out.printf("Your calcualted volume in cubic feet is: %10.2f\n ", vol);
+		double vol = calc.calcVol(h, l, w);
+		System.out.printf("Your calculated volume in cubic feet is:%5.2f\n ", vol);
 		
 	}
 	
 	public double calcVol (double h, double l, double w)
 	{
 		
-		return ((l*w*h)*.00057870);
+		return (.00057870*(l*w*h));
 	}
 }

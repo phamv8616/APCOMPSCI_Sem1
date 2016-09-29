@@ -1,9 +1,9 @@
 import java.util.Scanner;
-public class APLab_04
+public class Reciept
 {
 	public static void main(String[]args)
 	{
-		APLab_04 form = new APLab_04();
+		Reciept form = new Reciept();
 		
 		Scanner keyboard = new Scanner(System.in);
 		

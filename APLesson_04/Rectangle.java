@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class APLab_042
+public class Rectangle
 {
 	static double l;
 	static double h;
@@ -12,8 +12,8 @@ public class APLab_042
 		l = keyboard.nextDouble();
 		System.out.println("Please enter the height");
 		h = keyboard.nextDouble();
-		method calcPerim();
-		method print();
+		calcPerim();
+		print();
 	}
 	
 	public static void calcPerim()
@@ -23,6 +23,6 @@ public class APLab_042
 	
 	public static void print()
 	{
-		System.out.println("Your rectangle is " +perimeter +" ft around.");
+		System.out.println("Your rectangle is" +perimeter +" ft around.");
 	}
 }

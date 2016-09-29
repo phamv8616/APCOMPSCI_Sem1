@@ -1,9 +1,9 @@
 import java.util.Scanner;
-public class Ex_2
+public class IDcard
 {
 	public static void main(String[]args)
 	{
-		Ex_2 form = new Ex_2();
+		IDcard form = new IDcard();
 		
 		Scanner keyboard = new Scanner(System.in);
 		
@@ -28,15 +28,15 @@ public class Ex_2
 		String star = "*";
 		
 		System.out.println("***********************************");
-		form.format(star, fc1, sc1, star);
-		form.format(star, fc2, sc2, star);
-		form.format(star, fc3, sc3, star);
+		form.format(fc1, sc1);
+		form.format(fc2, sc2);
+		form.format(fc3, sc3);
 		System.out.println("***********************************");
 	}
 	
-	public void format( String star, String fc, String sc);
+	public void format (String fc, String sc)
 	{
-		System.out.printf("\n %1s %20s %20s %1s", star, fc, sc, star);
+		System.out.printf("%10s %10s\n", fc, sc);
 	}
 	
 }
