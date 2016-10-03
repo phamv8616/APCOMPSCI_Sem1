@@ -15,7 +15,7 @@ public class SubwooferBoxes
 		double w = keyboard.nextDouble();
 		
 		double vol = calc.calcVol(h, l, w);
-		System.out.printf("Your calculated volume in cubic feet is:%5.2f\n ", vol);
+		System.out.printf("Your calculated volume in cubic feet is: %5.2f\n ", vol);
 		
 	}
 	
