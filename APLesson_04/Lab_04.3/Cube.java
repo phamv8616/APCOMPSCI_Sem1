@@ -8,7 +8,7 @@ public class Cube
 		System.out.println("Please enter the side length");
 		double side = keyboard.nextDouble();
 		
-		print(calcSurf(double side));
+		print(calcSurf(side));
 	}
 	
 	public static double calcSurf(double side)

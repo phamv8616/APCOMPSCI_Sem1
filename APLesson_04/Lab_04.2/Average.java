@@ -27,6 +27,6 @@ public class Average
 	
 	public static void print()
 	{
-		System.out.println("The average of " +num1 +", " +num2 +", and " +num3 +" is " +avg);
+		System.out.printf("The average of " +num1 +", " +num2 +", and " +num3 +" is %3.5f",  avg);
 	}
 }

@@ -20,6 +20,6 @@ public class Circle
 	
 	public static void print()
 	{
-		System.out.println("The area of a circle with a radius of " +r +" is " +area);
+		System.out.printf("The area of a circle with a radius of " +r +" is %3.5f", area);
 	}
 }

@@ -23,6 +23,6 @@ public class Rectangle
 	
 	public static void print()
 	{
-		System.out.println("Your rectangle is " +perimeter +" ft around.");
+		System.out.printf("Your rectangle is %3.5f ft around.", perimeter);
 	}
 }
