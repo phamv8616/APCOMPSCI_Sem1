@@ -33,7 +33,7 @@ public class Reciept
 		double price4 = price1 + price2 + price3;
 		
 		String item5 = "Tax:";
-		double price5 = 0.63;
+		double price5 = price4*.075;
 		
 		String item6 = "Total:";
 		double price6 = price4 + price5;
