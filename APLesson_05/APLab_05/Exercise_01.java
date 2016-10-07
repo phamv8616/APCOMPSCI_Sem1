@@ -16,7 +16,7 @@ public class Exercise_01
 		rollDice();
 	}
 	
-	public static void rollDice (int player, int computer)
+	public void rollDice (int player, int computer)
 	{
 		if(player>computer)
 		{
