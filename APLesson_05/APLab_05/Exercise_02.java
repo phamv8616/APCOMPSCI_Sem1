@@ -31,19 +31,48 @@ public class Exercise_02
 		String item4 = keyboard.nextLine();
 		System.out.println("Please enter the price for your fourth item");
 		double price4 = keyboard.nextDouble();
+
+		String dots = "..............";
 		
-		String dots = ".......";
+		String star = "*";
 		
-		System.out.println("<<<<<<<<<<< Receipt >>>>>>>>>>>>>>");
-		form.format(item1, dots, price1);
-		form.format(item2, dots, price2);
-		form.format(item3, dots, price3);
-		form.format(item4, dots, price4);
+		String item5 = "Subtotal";
+		double price5 = price1 +price2 +price3 +price4;
+		
+		String item6 = "Tax";
+		double price6 = .075*price5;
+		
+		String item7 = "Total";
+		//double price7 = 
+		
+		System.out.println("<<<<<<<<<<<<< Receipt >>>>>>>>>>>>>>>>");
+		form.format(star, item1, dots, price1);
+		form.format(star, item2, dots, price2);  		
+		form.format(star, item3, dots, price3);
+		form.format(star, item4, dots, price4);
+		System.out.println("");
+		form.format(star, item5, dots, price5);
+		form.format(star, item6, dots, price6);
+		System.out.println("\n___________________________________");
+		System.out.println("*    Thank you for your support     *");
 		
 	}
 	
-	public void format(String item, String dots, double price)
+	public void format(String star, String item, String dots, double price)
 	{
-		System.out.printf("%5.2s %5.5f",item ,price);
+		System.out.printf("\n%1s %10s %8s %7.2f",star, item, dots, price);
 	}
+	
+	//public static double discount (double price5, double price7)
+	//{
+		//if(price5>=2000)
+		//{
+			//return .85*price5;
+		//}
+		
+		//if(price5<2000)
+		//{
+			//return price5;
+		//}
+	//}
 }

@@ -51,6 +51,7 @@ public class Reciept
 		System.out.println(" * Thank you for your support * ");
 	}
 	
+	
 	public void format(String star, String item, String dots, double price)
 	{
 		System.out.printf("\n%1s %20s %8s %5.2f", star, item, dots, price);
