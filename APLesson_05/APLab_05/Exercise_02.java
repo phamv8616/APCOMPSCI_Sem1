@@ -34,6 +34,7 @@ public class Exercise_02
 		
 		String sub = "Subtotal";
 		String tot = "Total";
+		String taxword = "Tax";
 		double subtotal = price1 + price2 +price3 + price4;
 		double discount = calcdiscount(subtotal);
 		double tax = subtotal*.08;
@@ -46,6 +47,7 @@ public class Exercise_02
 		form.format(item4,price4);
 		System.out.println("");
 		form.format(sub, subtotal);
+		form.format(taxword, tax);
 		form.format(tot, total);
 		System.out.println("\n___________________________________");
 		System.out.println("*    Thank you for your support     *");
@@ -61,6 +63,6 @@ public class Exercise_02
 	
 		public static void format(String item, double price)
 	{
-		System.out.printf("\n* %10s.......... %3.2f",item, price);
+		System.out.printf("\n* %10s.......... %5.2f",item, price);
 	}
 }

@@ -5,13 +5,19 @@ public class GPAcalc
 	{
 		Scanner keyboard = new Scanner(System.in);
 		
-		System.out.println("What is your letter grade in all 7 of your classes?");
+		System.out.println("What is your letter grade in science?");
 		String science = keyboard.next();
+		System.out.println("What is your letter grade in math?");
 		String math = keyboard.next();
+		System.out.println("What is your letter grade in english");
 		String english = keyboard.next();
+		System.out.println("What is your letter grade in history?");
 		String history = keyboard.next();
+		System.out.println("What is your letter grade in language");
 		String language = keyboard.next();
+		System.out.println("What is your letter grade in compsci?");
 		String compsci = keyboard.next();
+		System.out.println("What is your letter grade in your elective?");
 		String elective = keyboard.next();
 		
 		double gPoints = calcPoints(science) + calcPoints(math) + calcPoints(english) + calcPoints(history) +calcPoints(language) +calcPoints(compsci) + calcPoints(elective);

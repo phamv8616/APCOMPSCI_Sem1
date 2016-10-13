@@ -18,9 +18,9 @@ public class Exercise_01
 	
 	public static void rollDice()
 	{
-		if(player>computer)
+		if(player > computer)
 			winner = "Player";
-		if(computer>player)
+		if(computer > player)
 			winner = "Computer";	
 	}
 }
