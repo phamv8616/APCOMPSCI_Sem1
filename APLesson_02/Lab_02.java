@@ -7,17 +7,19 @@ public class Lab_02
 		int num3 = num1 * num2;
 		
 		System.out.println(+num1 +" multiplied by " +num2 +" equals " +num3);
+	
+		
 		
 		String first = "\nVyvian";
-		String last = " Pham";
-		String address = "2468 Torrey Pines Rd";
+		String last = " Pham ";
+		String address = "2468 Torrey Pines Rd ";
 		String city = "San Diego";
-		String zip = "92130";
-		
+		String state = "CA ";
+		String zip = "92130 ";
+
 		System.out.println(first + last);
 		System.out.println(address);
-		System.out.println(city);
-		System.out.println(zip);
+		System.out.println(city + ", " +state +zip);
 		
 		int l = 3;
 		int w = 4;

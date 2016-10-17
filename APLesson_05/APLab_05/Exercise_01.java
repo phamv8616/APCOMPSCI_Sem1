@@ -20,7 +20,7 @@ public class Exercise_01
 	{
 		if(player > computer)
 			winner = "Player";
-		if(computer > player)
+		else
 			winner = "Computer";	
 	}
 }

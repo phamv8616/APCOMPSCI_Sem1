@@ -16,25 +16,25 @@ public class BMI
 		
 		bmi = (weight/(height*height))*703;
 		
-		String condition = calcCondish();
+		calcCondish();
 		
-		System.out.println("\nYour BMI is: " +bmi);
+		System.out.printf("\nYour BMI is: %.1f" ,bmi);
 		System.out.println("\nYou are " +condition);
 	}
 	
-	public static void String calcCondish()
+	public static void calcCondish()
 	{
 		if(bmi<18.5)
-			condition = "Underweight";
+			condition = "Underweight.";
 		else if(bmi<24.9)
-			condition = "Normal";
+			condition = "Normal.";
 		else if(bmi<29.9)
-			condition= "Overwight";
+			condition= "Overweight.";
 		else if(bmi<34.9)
-			condition = "Very Obese";
+			condition = "Very Obese.";
 		else 
-			condition = "Morbidly Obese";
-		
+			condition = "Morbidly Obese.";			
+
 	}
 	
 }
