@@ -6,10 +6,10 @@ public class adventure
 	public static void main(String[]args)
 	{
 		Scanner keyboard = new Scanner(System.in);
-		order();
+		recursion();
 	}
 	
-	public static void order()
+	public static void recursion()
 	{
 		int choice = keyboard.nextInt();
 		System.out.println("Once upon a time there was a young boy named John that went to in-n-out." +
@@ -33,7 +33,7 @@ public class adventure
 		else
 		{
 			System.out.println("Please enter 1 or 2");
-			order();
+			recursion();
 		}
 	}
 }
