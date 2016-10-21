@@ -2,38 +2,30 @@ import java.util.Scanner;
 public class adventure
 {
 	static Scanner keyboard;
-	
 	public static void main(String[]args)
 	{
-		Scanner keyboard = new Scanner(System.in);
-		recursion();
+		keyboard = new Scanner (System.in);
+		framework();
+		
 	}
 	
-	public static void recursion()
+	public static void framework()
 	{
-		int choice = keyboard.nextInt();
-		System.out.println("Once upon a time there was a young boy named John that went to in-n-out." +
-							"\nHe had trouble deciding what he wanted to order because he literally wanted everything there." +
-							"\nIt is your task to help John decide what he wants to order from in-n-out.");
-		System.out.println("Should John order a combo meal?"+
-							"\n1. Yes"+
-							"\n2. No");		
+		System.out.println("A young man arrrives in Hawaii for vacation, but he has difficulty" +
+							"\nwith deciding where he should go. His friends help him decide where" +
+							"\nto go through the process of elminiation." +
+							"\nShould he eat or go to the beach first?"+
+							"\n1. Eat" +
+							"\n2. Go to the beach");
+		int choice1 = keyboard.nextInt();
+		int choice = choice1;
 		
-		if (choice==1 || choice==2)
-		{
+		if (choice==choice1)
 			if (choice==1)
-			{
-				System.out.println("When it was John's turn to order, he");
-			}
+				System.out.println("He went to a nearby restaurant and finished his meal off with"+
+									"\nsome shaved ice.");
 			else
-			{
-				System.out.println("");
-			}
-		}
-		else
-		{
-			System.out.println("Please enter 1 or 2");
-			recursion();
-		}
+				System.out.println("He immediately went to the beach and swam alongside turtles.");
+
 	}
-}
+}								
