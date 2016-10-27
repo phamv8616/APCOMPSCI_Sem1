@@ -3,15 +3,21 @@ public class graphtable
 {
 	public static void main(String[]args)
 	{
+		graphtable form = new graphtable();
 		Scanner keyboard = new Scanner(System.in);
 		System.out.println("Please enter a number: ");
-		int number = keyboard.nextInt();
+		int num = keyboard.nextInt();
 		System.out.println("Please enter size of the table: ");
 		int size = keyboard.nextInt();
-		
-		for(int i = 0; i<=size; i++)
+		for (int i=1; i<=size; i++)
 		{
-			System.out.println(i*number);
+			form.format(i);		
 		}
+
+	}
+
+	public void format(int i)
+	{
+		System.out.printf("\n%5f",i);
 	}
 }

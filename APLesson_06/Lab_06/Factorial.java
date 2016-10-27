@@ -9,8 +9,11 @@ public class Factorial
 		int factorial = 1;
 		for(int i = 1; i<=number; i++)
 		{
-			System.out.println();
+			factorial = factorial*i;
+			System.out.println(factorial);
 		}
+		
+		System.out.println("\nFactorial of " +number +" is " +factorial);
 
 	}
 	
