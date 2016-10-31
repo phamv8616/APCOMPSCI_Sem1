@@ -9,15 +9,17 @@ public class graphtable
 		int num = keyboard.nextInt();
 		System.out.println("Please enter size of the table: ");
 		int size = keyboard.nextInt();
-		for (int i=1; i<=size; i++)
+		int total;
+		for (int i = 1; i<=size; i++)
 		{
-			form.format(i);		
+			form.format(i, total);
 		}
 
 	}
 
-	public void format(int i)
+	public void format(int i, int num, int total)
 	{
-		System.out.printf("\n%5f",i);
+		total = i*num;
+		System.out.printf("\n%5f\t%5f", i, total);
 	}
 }
