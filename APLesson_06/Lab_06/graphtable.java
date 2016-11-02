@@ -12,7 +12,7 @@ public class graphtable
 		int total;
 		for (int i = 1; i<=size; i++)
 		{
-			form.format(i, total);
+			format(i, total);
 		}
 
 	}
