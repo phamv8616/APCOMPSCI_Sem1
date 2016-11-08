@@ -7,15 +7,15 @@ public class TreeDeg60
 		System.out.println("Please enter a word: ");
 		String word = keyboard.nextLine();
 		int stop = word.length();
-		int start = 
+		int start = 0;
 	}
 	public static String tree(String word, int start, int stop)
 	{
 		if (start<=stop)
 		{
-			sentence.substring(0,start);
+			word.substring(0,start);
 			start ++;
-			tree(word, start, stop);
+			return tree(word, start, stop);
 			
 		}
 		else

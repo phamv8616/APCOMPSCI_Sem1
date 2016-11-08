@@ -9,11 +9,11 @@ public class song
 		int num1 = 4;
 		int num2 = 3;
 		int num3 = 1;
-		String hey = "fda";
-		sing(word1, num1, hey);
-		sing(word1, num1);
-		sing(word2, num2);
-		sing(word3, num3);
+		String next = "\n";
+		sing(word1, num1, next);
+		sing(word1, num1, next);
+		sing(word2, num2, next);
+		sing(word3, num3, next);
 	}
 	public static void sing (String word, int num)
 	{
