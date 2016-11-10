@@ -10,9 +10,9 @@ public class Center
 		String word2 = keyboard.nextLine();	
 		System.out.println("Please enter word#3");
 		String word3 = keyboard.nextLine();
-		makeCenter(word1);
-		makeCenter(word2);
-		makeCenter(word3);
+		System.out.println(makeCenter(word1));
+		System.out.println(makeCenter(word2));
+		System.out.println(makeCenter(word3));
 	}
 	public static String makeCenter(String word)
 	{
