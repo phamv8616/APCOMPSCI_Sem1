@@ -19,7 +19,7 @@ public class fibonacciSequenece
 			}
 			else
 			{
-				seq[i] = seq[i-1] + seq[1-2];
+				seq[i] = (seq[i-1] + seq[i-2]);
 			}
 			System.out.println("\n" + seq[i] + " ");
 		}

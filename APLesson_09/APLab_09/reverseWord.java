@@ -12,7 +12,7 @@ public class reverseWord
 			words[i] = keyboard.next();
 		}
 		
-		System.out.println("In order...\n");
+		System.out.println("\nIn order...\n");
 		
 		for (String word : words)
 		{
@@ -29,7 +29,7 @@ public class reverseWord
 	{
 		for( int i = words.length; i > 0; i--)
 		{
-			System.out.println(words.substring(i));
+			System.out.println(words[i]);
 		}
 		return " ";
 	}

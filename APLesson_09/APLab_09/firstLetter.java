@@ -17,5 +17,10 @@ public class firstLetter
 	
 	public static String first(String[]words)
 	{
+		for( String word : words)
+		{
+			System.out.println(word.charAt(0));
+		}
+		return " ";
 	}
 }
