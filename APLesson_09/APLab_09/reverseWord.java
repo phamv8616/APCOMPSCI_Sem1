@@ -29,7 +29,7 @@ public class reverseWord
 	{
 		for( int i = words.length; i > 0; i--)
 		{
-			System.out.println(words[i]);
+		System.out.println(words[i]);
 		}
 		return " ";
 	}

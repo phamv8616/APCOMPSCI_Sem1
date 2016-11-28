@@ -4,31 +4,33 @@ public class biggestNumber
 	public static void main(String[]args)
 	{
 		numbers = new int [10];
-		fillArray();
-		System.out.println("For the following numbers ... " + printArray()+
-		"The biggest number is " + getBiggest());
+		fillArray(numbers);
+		System.out.println("For the following numbers... " + printArray(numbers));
+		System.out.println("The biggest number is... " + getBiggest(numbers));
 	}
 	
-	public static void fillArray()
+	public static int fillArray(int[]n)
 	{
-		for(int i = 0; i < numbers; i++)
+		for(int i = 0; i < numbers.length; i++)
 		{
 			numbers[i] = (int)(Math.random() * 100) +1;
 		}
+		return 0;
 	}
 	
-	public static void printArray()
+	public static int printArray(int[]n)
 	{
-		for(int num : numbers)
+		for(int num : n)
 		{
 			System.out.println(num);
 		}
+		return 0;
 	}
 	
-	public static void getBiggest()
+	public static int getBiggest(int[]n)
 	{
-		int max;
-		for (int number : numbers)
+		int max = 0;
+		for (int number : n)
 		{
 			if (number > max)
 			{
@@ -36,5 +38,6 @@ public class biggestNumber
 			}
 			return max;
 		}
+		return 0;
 	}
 }

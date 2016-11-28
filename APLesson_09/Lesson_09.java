@@ -18,6 +18,5 @@ public class Lesson_09
 		{
 			System.out.print("\"" + name.length() + "\",");
 		}
-		
 	}
 }

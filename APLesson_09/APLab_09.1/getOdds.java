@@ -8,28 +8,34 @@ public class getOdds
 		
 		fillArray();
 		
-		System.out.println("For the following numbers ... ");
+		System.out.println("For the following numbers ... " + printArray()+
+		"The " + getOdds() + "are all odd numbers");
+
 	}
 	
-	public static void fillArray()
+	public static int fillArray(int[]n)
 	{
-		for(int i = 0; i < numbers; i++)
+		for(int i = 0; i<numbers.length; i++)
 		{
 			numbers[i] = (int)(Math.random() * 100) + 1;			
 		}
 	}
 	
-	public static void printArray()
+	public static int printArray(int[]n)
 	{
 		for(int number : numbers)
 		{
-			System.out.println(arrays);
+			System.out.println(number);
 		}
 	}
 	
-	public static void getOdds()
-	{
-		
-	}
-	return odds;
+	// public static void getOdds()
+	// {
+		// int odds;
+		// for( int number : numbers)
+		// {
+			// if()
+		// }
+	// }
+	// return odds;
 }
