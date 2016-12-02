@@ -5,16 +5,16 @@ public class findTheZs
 	public static void main(String[]args)
 	{
 		words = new String [5];
-		fillArray();
-		System.out.println("For the words " +printArray(word[i]) +"...");
-		System.out.println("Only " + hasZs(word[i]) + " contain(s) the letter z");
+		fillArray(words);
+		System.out.println("For all the words: \n");
+		printArray(words);
+		System.out.println("\nOnly the following contain the letter z" + hasZs(words));
 	}
 	
-	public static fillArray()
+	public static void fillArray(String [] words)
 	{
-		System.out.println("Please enter 5 words: ");
-		
 		Scanner keyboard = new Scanner(System.in);
+		System.out.println("Please enter 5 words: ");
 		
 		for(int i = 0; i < words.length; i++)
 		{
@@ -22,7 +22,7 @@ public class findTheZs
 		}
 	}
 	
-	public static printArray()
+	public static void printArray(String [] words)
 	{
 		for(String word : words)
 		{
@@ -30,15 +30,16 @@ public class findTheZs
 		}
 	}
 	
-	public static hasZs()
+	public static String hasZs(String [] words)
 	{
-		String zs = "zs";
+		String zs = " ";
 		for(String word : words)
 		{
 			if (word.indexOf("z")>=0)
 			{
-				System.out.println(word);
+				words + zs;
 			}
 		}
+		return zs;
 	}
 }

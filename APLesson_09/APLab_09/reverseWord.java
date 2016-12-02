@@ -20,17 +20,16 @@ public class reverseWord
 		}
 		
 		System.out.println();
-		System.out.println("Reversed...");
+		System.out.println("Reversed...\n");
 		
 		reverse(words);
 	}
 	
-	public static String reverse(String[] words)
-	{
-		for( int i = words.length; i > 0; i--)
+	public static void reverse(String[] words)
+	{	
+		for( int i = words.length-1; i >= 0; i--)
 		{
-		System.out.println(words[i]);
+			System.out.println(words[i]);
 		}
-		return " ";
 	}
 }

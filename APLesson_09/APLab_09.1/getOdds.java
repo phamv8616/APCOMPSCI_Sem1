@@ -1,19 +1,22 @@
 public class getOdds
 {
 	static int [] numbers;
-	
 	public static void main(String[]args)
 	{
 		numbers = new int [10];
 		
-		fillArray();
+		fillArray(numbers);
 		
-		System.out.println("For the following numbers ... " + printArray()+
-		"The " + getOdds() + "are all odd numbers");
+		System.out.println("For the following numbers:");
+		printArray(numbers);
+		System.out.println("The ");
+		getOdds(numbers);
+		System.out.println("are odd numbers.");
+		
 
 	}
 	
-	public static int fillArray(int[]n)
+	public static void fillArray(int[] n)
 	{
 		for(int i = 0; i<numbers.length; i++)
 		{
@@ -21,21 +24,23 @@ public class getOdds
 		}
 	}
 	
-	public static int printArray(int[]n)
+	public static void printArray(int[] n)
 	{
 		for(int number : numbers)
 		{
 			System.out.println(number);
 		}
+		
 	}
 	
-	// public static void getOdds()
-	// {
-		// int odds;
-		// for( int number : numbers)
-		// {
-			// if()
-		// }
-	// }
-	// return odds;
+	public static String getOdds(int[] n)
+	{
+		String odds = " ";
+		for( int number : numbers)
+		{
+			if(number%2 != 0)
+			number += odds;
+		}
+		return odds;
+	}
 }
