@@ -11,14 +11,22 @@ public class Ex_01
 		System.out.println(nums);
 	}
 	
-	public static int gFactor(int n)
+	public static int gFactor(int[]n)
 	{
-		for (int i; i <= n; i++)
+		for (int i = 2; i <= n; i++)
+			if(numbers[i]%n==0)
+			{
+				return 1;
+			}
+			else
+				return 0;
 	}
 
-	public static int removePrimes(int n)
+	public static int removePrimes(int[]nums)
 	{
 		for(int i = 0; i <= nums.size(); i++)
-			
+			if(gFactor(nums[i])==0)
+				nums.remove(nums.indexOf(i));
+				i-=1;
 	}
 }
