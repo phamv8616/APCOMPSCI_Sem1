@@ -10,4 +10,15 @@ public class Ex_01
 		
 		System.out.println(nums);
 	}
+	
+	public static int gFactor(int n)
+	{
+		for (int i; i <= n; i++)
+	}
+
+	public static int removePrimes(int n)
+	{
+		for(int i = 0; i <= nums.size(); i++)
+			
+	}
 }

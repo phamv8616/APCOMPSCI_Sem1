@@ -8,7 +8,7 @@ public class findTheZs
 		fillArray(words);
 		System.out.println("For all the words: \n");
 		printArray(words);
-		System.out.println("\nOnly the following contain the letter z" + hasZs(words));
+		System.out.println("\nOnly the following contain the letter z:" + hasZs(words));
 	}
 	
 	public static void fillArray(String [] words)
@@ -37,7 +37,7 @@ public class findTheZs
 		{
 			if (word.indexOf("z")>=0)
 			{
-				words + zs;
+				zs += word + ", "; ;
 			}
 		}
 		return zs;

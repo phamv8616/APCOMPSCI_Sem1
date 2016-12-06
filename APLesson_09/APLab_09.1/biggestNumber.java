@@ -5,9 +5,9 @@ public class biggestNumber
 	{
 		numbers = new int [10];
 		fillArray(numbers);
-		System.out.println("For the following numbers... ");
+		System.out.println("For the following numbers... \n");
 		printArray(numbers);
-		System.out.println("The biggest number is... ");
+		System.out.println("\nThe biggest number is... ");
 		getBiggest(numbers);
 	}
 	
