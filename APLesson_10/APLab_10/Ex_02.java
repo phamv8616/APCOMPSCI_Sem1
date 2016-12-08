@@ -9,22 +9,45 @@ public class Ex_02
 		System.out.println("Please enter an equation: ");
 		String equation = keyboard.nextLine();
 		
-		ArrayList<String>equation = new ArrayList<>(Arrays.asList(expression.split(" ")));
-		
-		int i = 0;
-		while(i < equation.size())
+		ArrayList<String> equation = new ArrayList<String>();
+		System.out.println(doEquation(equation));		
+	}
+	
+	public static String doEquation(String[] i)
+	{
+		while(i<equation.size)
 		{
-			if(i < equation size() && equation.get(i).equals("+"))
+			if(equation.indexOf(i)== "*" || equation.indexOf(i)== "/")
 			{
-				equation.set(i, " " + (Integer.parseInt(equation.get(i-1)) + Integer.parseInt(equation.get(i+1))));
-				equation.remove(i-1);
-				equation.remove(i);
+				if(equation.indexOf(i) == "*")
+				{
+					equation.indexOf(i) = equation.indexOf(i-1)*equation.indexOf(i+1);					
+				}
+				else
+				{
+					equation.indexOf(i) = equation.indexof(i-1)/equation.indexOf(i+1);					
+				}
+				equation.remove(equation.indexOf(i-1));
+				equation.remove(equation.indexOf(i));			
 			}
-			else
-				i++;
 		}
 		
-		System.out.println(equation);
-		
+		while(i<equation.size)
+		{
+			if(equation.indexOf(i)== "+" || equation.indexOf(i)== "-")
+			{
+				if(equation.indexOf(i)== "+")
+				{
+					equation.indexOf(i)= equation.indexOf(i-1) + equation.indexOf(i+1);
+				}
+				else
+				{
+					equation.indexOf(i)= equation.indexOf(i-1) - equation.indexOf(i+1);
+				}
+				equation.remove(equation.indexOf(i-1));
+				equation.remove(equation.indexOf(i));
+			}
+		}
+			return equation;
 	}
 }
