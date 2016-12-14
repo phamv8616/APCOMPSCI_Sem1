@@ -43,8 +43,12 @@ public class SearchTwoDee
 		{
 			for(int j = 0; j < values[i].length; j++)
 			{
-				if(values[i])
+				if(values[i][j] % 5 == 0)
+				{
+					count++;
+				}
 			}
 		}
+		System.out.println("There are " + count + " multiples of 5 in the Array.");
 	}
 }
