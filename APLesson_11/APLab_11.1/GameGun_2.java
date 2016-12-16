@@ -19,6 +19,7 @@ public class GameGun_2
 			turn = keyboard.nextLine();
 			damage = (int)(Math.random()*2) + 1;
 			amount = (int)(Math.random()*6) + 1;
+			System.out.println(takeDamage(damage,amount));
 			printClip();
 		}
 		
@@ -29,8 +30,8 @@ public class GameGun_2
 	{
 		if(dmg == 1)
 		{
-			healthCount-=amt;
-			return "Taking" + amt + "damage!";
+			healthCount -= amt;
+			return "Taking " + amt + " damage!";
 		}
 		else
 		{
@@ -38,7 +39,7 @@ public class GameGun_2
 			{
 				amt += healthCount;
 			}
-			return "Power Up" + amt;
+			return "Power Up " + amt;
 		}
 	}
 	
@@ -56,7 +57,7 @@ public class GameGun_2
 				health[i] = "[]";
 			}
 			
-			health[i] += output;
+			output += health[i];
 			System.out.println(output);
 		}
 	}
