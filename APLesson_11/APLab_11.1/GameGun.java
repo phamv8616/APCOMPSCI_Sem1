@@ -27,10 +27,8 @@ public class GameGun
 				shoot();
 			}
 			printClip();		
-		}
-			System.out.println("Out of Bullets!");			
+		}		
 		
-		printClip();
 		System.out.println("Out of Bullets!");
 	}
 	
@@ -60,7 +58,7 @@ public class GameGun
 	{
 		if (bulletCount >= CLIPSIZE)
 		{
-			bulletCount-=CLIPSIZE;
+			bulletCount -= CLIPSIZE;
 			shotCount = CLIPSIZE;
 		}
 		else
@@ -70,6 +68,7 @@ public class GameGun
 		}
 		
 		resetClip();
+		
 		for ( int i = 0; i < shotCount; i++)
 		{
 			clip[i] = " * ";

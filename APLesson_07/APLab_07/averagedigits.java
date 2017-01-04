@@ -1,8 +1,8 @@
 import java.util.Scanner;
 public class averagedigits
 {
-	static int digits = 0;
-	static int average = 0;
+	static double digits = 0;
+	static double average = 0;
 	static int number;
 	static int num;
 	public static void main(String[]args)
