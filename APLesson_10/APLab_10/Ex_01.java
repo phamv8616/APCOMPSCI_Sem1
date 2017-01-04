@@ -11,10 +11,10 @@ public class Ex_01
 		System.out.println(nums);
 	}
 	
-	public static int gFactor(int[]n)
+	public static int gFactor(int n)
 	{
-		for (int i = 2; i <= n; i++)
-			if(numbers[i]%n==0)
+		for (int v = 2; v <= n; v++)
+			if(v%n==0)
 			{
 				return 1;
 			}
@@ -22,11 +22,15 @@ public class Ex_01
 				return 0;
 	}
 
-	public static void removePrimes(int[]nums)
+	public static void removePrimes(int [] nums)
 	{
 		for(int i = 0; i <= nums.size(); i++)
 			if(gFactor(nums[i])==0)
-				nums.remove(nums.indexOf(i));
+			{
+				nums.remove(nums.indexOf(i));	
+				i --;
+			}
+				
 				
 	}
 }
