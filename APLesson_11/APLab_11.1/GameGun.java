@@ -12,19 +12,19 @@ public class GameGun
 		shotCount = 0;
 		clip = new String [CLIPSIZE];
 		resetClip();
-		
+
 		while (bulletCount > 0 || shotCount > 0)
 		{
 			System.out.println("Action: ");
 			String action = keyboard.nextLine();
 			
-			if (action == "R")
+			if (action.equals("R"))
 			{
 				reload();				
 			}
-			else if (action == "S")
+			else if (action.equals("S"))
 			{
-				shoot();
+				System.out.println(shoot());
 			}
 			printClip();		
 		}		
@@ -77,15 +77,14 @@ public class GameGun
 	
 	public static void printClip()
 	{
-		String output = " ";
+		String output = "";
 		System.out.println("Bullets: " + "\t" + bulletCount);
-		System.out.println("Clip: \t");
+		System.out.print("Clip: \t");
 		
 		for (int i = 0; i < CLIPSIZE; i++)
 		{
-			clip[i] += output;
+			output += clip[i] + " ";
 		}
-		
 		System.out.println(output);
 	}
 }
