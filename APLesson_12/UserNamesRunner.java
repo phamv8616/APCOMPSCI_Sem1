@@ -8,7 +8,7 @@ public class UserNamesRunner
 		System.out.println("Name: " + object.getFirstName() + " " + object.getLastName());
 		System.out.println("User Name: " + object.getUserName());
 		
-		// UserNames object1 = new UserNames();		
+		UserNames object1 = new UserNames();		
 		
 		object.setUserName("phamvyvian");
 		System.out.println("\n<<<<<<<<<< USER INFO >>>>>>>>>");

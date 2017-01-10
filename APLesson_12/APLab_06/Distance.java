@@ -41,9 +41,9 @@ public class Distance
 		yTwo = y2;
 	}
 	
-	public double getDistance(int xOne, int yOne, int xTwo, int yTwo, double distance)
+	public double getDistance()
 	{
-		distance = Math.sqrt((xTwo-xOne)*(xTwo-xOne) + (yTwo-yOne)*(yTwo-yOne));
+		distance = Math.sqrt(((xTwo-xOne)*(xTwo-xOne)) + ((yTwo-yOne)*(yTwo-yOne)));
 		return distance;
 	}
 }

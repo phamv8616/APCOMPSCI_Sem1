@@ -14,15 +14,18 @@ public class MPHRunner
 		System.out.println("Minutes: ");
 		int minutes = keyboard.nextInt();
 		
-		MilesPerHour object = new MilesPerHour(distance, hours, minutes, mph);
-		System.out.println("<<<<<<<<<<< INFO >>>>>>>>>>>");
-		System.out.println(distance + " miles in " + hours + " hours = " + object.getMPH(distance, hours, minutes, mph) + " mph.");
+		MilesPerHour object = new MilesPerHour(distance, hours, minutes);		
 		
-		object.setDistance(10);
-		object.setHours(2);
-		object.setMinutes(20);
-		System.out.println("<<<<<<<<<<< INFO >>>>>>>>>>>");
-		System.out.println(distance + " miles in " + hours + " hours = " + object.getMPH(distance, hours, minutes, mph) + " mph.");
+		System.out.println("\n<<<<<<<<<<< INFO >>>>>>>>>>>");
+		System.out.println(distance + " miles in " + hours + " hours = " + object.getMPH() + " mph.");
+
+		MilesPerHour object1 = new MilesPerHour();	
+		 
+		distance = 40;
+		hours = 2;
+		minutes = 2;
+		System.out.println("\n<<<<<<<<<<< INFO >>>>>>>>>>>");
+		System.out.println(distance + " miles in " + hours + " hours = " + object.getMPH() + " mph.");
 		
 
 	}

@@ -12,12 +12,12 @@ public class MilesPerHour
 		mph = 0;
 	}
 	
-	public MilesPerHour(int d, int h, int min, double m)
+	public MilesPerHour(int d, int h, int min)
 	{
 		distance = d;
 		hours = h;
 		minutes = min;
-		mph = m;
+		mph = 0;
 	}
 	
 	public void setDistance(int d)
@@ -35,7 +35,7 @@ public class MilesPerHour
 		minutes = min;
 	}
 	
-	public double getMPH(int distance, int hours, int minutes, double mph)
+	public double getMPH()
 	{
 		mph = Math.round(distance/ (hours + minutes/ 60.0));
 		return mph;
