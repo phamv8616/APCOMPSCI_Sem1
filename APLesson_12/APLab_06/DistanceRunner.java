@@ -30,7 +30,7 @@ public class DistanceRunner
 		System.out.println("<<<<<<<<<<<< INFO >>>>>>>>>>>>");
 		System.out.println("Point 1: " + x1 + ", " + y1);
 		System.out.println("Point 1: " + x2 + ", " + y2);
-		Systme.out.println("Distance: " + object.getDistance());
+		System.out.println("Distance: " + object.getDistance());
 		
 		
 		
