@@ -22,14 +22,11 @@ public class DistanceRunner
 		System.out.println("Point 1: (" + x1 + ", " + y1 + ")");
 		System.out.println("Point 2: (" + x2 + ", " + y2 + ")");
 		System.out.println("Distance: " + object.getDistance());
-		
-		object.setX1(10);
-		object.setY1(12);
-		object.setX2(5);
-		object.setY2(6);
+
+		object.setValues(1,5,7,6);
 		System.out.println("\n<<<<<<<<<<<< INFO >>>>>>>>>>>>");
-		System.out.println("Point 1: (" + x1 + ", " + y1 + ")");
-		System.out.println("Point 2: (" + x2 + ", " + y2 + ")");
+		System.out.println("Point 1: (" + object.getX1() + ", " + object.getY1() + ")");
+		System.out.println("Point 2: (" + object.getX2() + ", " + object.getY2() + ")");
 		System.out.println("Distance: " + object.getDistance());
 		
 		

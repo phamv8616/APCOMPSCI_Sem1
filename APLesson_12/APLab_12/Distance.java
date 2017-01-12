@@ -21,25 +21,33 @@ public class Distance
 		yTwo = y2;		
 	}
 	
-	public void setX1(int x1)
+	public void setValues(int x1, int y1, int x2, int y2)
 	{
-		xOne = x1;
+		xOne = x1;		
+		yOne = y1;		
+		xTwo = x2;		
+		yTwo = y2;		
 	}
 	
-	public void setY1(int y1)
+	public int getX1()
 	{
-		yOne = y1;
+		return xOne;
 	}
+
+	public int getY1()
+	{
+		return yOne;
+	}
+
+	public int getX2()
+	{
+		return xTwo;
+	}	
 	
-	public void setX2(int x2)
+	public int getY2()
 	{
-		xTwo = x2;
-	}
-	
-	public void setY2(int y2)
-	{
-		yTwo = y2;
-	}
+		return xTwo;
+	}	
 	
 	public double getDistance()
 	{

@@ -20,19 +20,26 @@ public class MilesPerHour
 		mph = 0;
 	}
 	
-	public void setDistance(int d)
+	public void setValues(int d, int h, int m)
 	{
 		distance = d;
-	}
-	
-	public void setHours(int h)
-	{
 		hours = h;
+		minutes = m;
 	}
 	
-	public void setMinutes(int min)
+	public int getDistance()
 	{
-		minutes = min;
+		return distance;
+	}
+	
+	public int getHours()
+	{
+		return hours;
+	}
+	
+	public int getMinutes()
+	{
+		return minutes;
 	}
 	
 	public double getMPH()
