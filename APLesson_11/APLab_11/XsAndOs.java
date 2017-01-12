@@ -13,7 +13,7 @@ public class XsAndOs
 				{
 					xAndO[i][j] = "x";
 				}
-				else
+				if (pick == 2)
 				{
 					xAndO[i][j] = "o";
 				}
