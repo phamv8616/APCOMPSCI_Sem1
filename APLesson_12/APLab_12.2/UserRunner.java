@@ -4,31 +4,29 @@ public class UserRunner
 	public static void main(String[]args)
 	{
 		Scanner keyboard = new Scanner(System.in);
-		System.out.println("Enter your first name");
-		String first = keyboard.nextLine();
-		System.out.println("Enter your last name");
-		String last = keyboard.nextLine();
+				
+		System.out.println("Please enter your first name: ");
+		String firstName = keyboard.nextLine();
+		System.out.println("Please enter your last name: ");
+		String lastName = keyboard.nextLine();
+		
+		User user1 = new User();
+
 		System.out.println("Would you like to use a public avatar? (y or n)");
-		String yesorno = keyboard.nextLine();
-		if (yesorno.equals("n"))
+		String yesorno = keyboard.nextLine();	
+		
+		if(yesorno.equals("y"))
 		{
-			User object = new User("Vyvian", "Pham");
-			System.out.println(object);
-			System.out.println();
+			System.out.println("Please enter your avatar name: ");
+			String avatar = keyboard.nextLine();
+			user1 = new User(firstName,lastName, avatar);
 		}
-		if (yesorno.equals("y"));
+		if(yesorno.equals("n"))
 		{
-			User object2 = new User("Vyvian", "Pham", "VyvPham");
-			System.out.println(object2);
+			user1 = new User(firstName, lastName);
 		}
 		
+		System.out.println(user1);
 	}
 	
-	// public String toString()
-	// {
-		// return "Customer Info...\nFirst Name: " + firstName +
-								// "\nLast Name: " + lastName +
-								// "\nAvatar: " + avatar +
-								// "\nUserID#: " + userID;
-	// }
 }
