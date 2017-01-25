@@ -6,48 +6,51 @@ public class Ex_02
 	public static void main(String[]args)
 	{
 		Scanner keyboard = new Scanner(System.in);
-		System.out.println("Please enter an equation: ");
-		String equation = keyboard.nextLine();
+		System.out.println("Please enter a mathematical expression: ");
+		String expression = keyboard.nextLine();
 		
-		ArrayList<String> equation = new ArrayList<String>();
+		ArrayList<String> equation = new ArrayList<String>(Arrays.asList(expression));
 		System.out.println(doEquation(equation));		
 	}
 	
-	public static String doEquation(String[] i)
+	public static String doEquation(ArrayList<String> equation)
 	{
-		while(i<equation.size)
+		int i = 0;
+		while(i<equation.size())
 		{
-			if(equation.indexOf(i)== "*" || equation.indexOf(i)== "/")
+			if(equation.get(i).equals("*") || equation.get(i).equals("/"))
 			{
-				if(equation.indexOf(i) == "*")
+				if(equation.get(i).equals("*"))
 				{
-					equation.indexOf(i) = equation.indexOf(i-1)*equation.indexOf(i+1);					
+					equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) * Integer.parseInt(equation.get(i+1))));
 				}
 				else
-				{
-					equation.indexOf(i) = equation.indexof(i-1)/equation.indexOf(i+1);					
+				{	
+					equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) / Integer.parseInt(equation.get(i+1))));					
 				}
-				equation.remove(equation.indexOf(i-1));
-				equation.remove(equation.indexOf(i));			
+				equation.remove(i-1);
+				equation.remove(i);			
 			}
 		}
 		
-		while(i<equation.size)
+		i = 0;
+		while(i<equation.size())
 		{
-			if(equation.indexOf(i)== "+" || equation.indexOf(i)== "-")
+			if(equation.get(i).equals("+" )|| equation.get(i).equals("-"))
 			{
-				if(equation.indexOf(i)== "+")
+				if(equation.get(i)== "+")
 				{
-					equation.indexOf(i)= equation.indexOf(i-1) + equation.indexOf(i+1);
+					equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) + Integer.parseInt(equation.get(i+1))));					
 				}
 				else
 				{
-					equation.indexOf(i)= equation.indexOf(i-1) - equation.indexOf(i+1);
+					equation.set(i, "" + (Integer.parseInt(equation.get(i-1)) - Integer.parseInt(equation.get(i+1))));
 				}
-				equation.remove(equation.indexOf(i-1));
-				equation.remove(equation.indexOf(i));
+				equation.remove(i-1);
+				equation.remove(i);
 			}
+			i++;
 		}
-			return equation;
+		System.out.println(equation);
 	}
 }

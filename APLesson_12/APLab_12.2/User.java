@@ -36,7 +36,7 @@ public class User
 	
 	public String toString()
 	{
-		return "Customer Info...\nFirst Name: " + firstName +
+		return "\nCustomer Info...\nFirst Name: " + firstName +
 								"\nLast Name: " +lastName +
 								"\nAvatar: " + avatar +
 								"\nUser ID#: " + userID;
