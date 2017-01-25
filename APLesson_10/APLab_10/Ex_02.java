@@ -32,6 +32,7 @@ public class Ex_02
 				equation.remove(i);			
 			}
 		}
+		i++;
 		
 		i = 0;
 		while(i<equation.size())
@@ -51,6 +52,6 @@ public class Ex_02
 			}
 			i++;
 		}
-		System.out.println(equation);
+		return equation;
 	}
 }
