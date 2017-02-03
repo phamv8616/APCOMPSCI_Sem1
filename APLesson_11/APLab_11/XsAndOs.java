@@ -17,7 +17,7 @@ public class XsAndOs
 				{
 					xAndO[i][j] = "o";
 				}
-				System.out.println(xAndO[i][j] + "\t");
+				System.out.print(xAndO[i][j] + "\t");
 			}
 			System.out.println();
 		}

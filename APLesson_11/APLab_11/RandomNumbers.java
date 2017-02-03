@@ -14,9 +14,9 @@
 		 {
 			 for(int j = 0; j < nums[i].length; j++)
 			 {
-				 System.out.println(nums[i][j]);
+				 System.out.print(nums[i][j] + "\t");
 			 }
-			 System.out.println();
+			 System.out.println("");
 		 }
 	 }
  }

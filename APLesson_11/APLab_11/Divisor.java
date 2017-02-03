@@ -11,12 +11,12 @@ public class Divisor
 			for (int j = 0 ; j < nums[i].length; j++)
 			{
 				nums[i][j] = (int)(Math.random()*100) + 1;
-				System.out.println(nums[i][j]);
+				System.out.print(nums[i][j] + "\t");
 			}
 			System.out.println();
 		}
 		
-		System.out.println("Please enter a number: ");
+		System.out.println("\nPlease enter a number: ");
 		int divisor = keyboard.nextInt();
 		
 		int count = 0;
