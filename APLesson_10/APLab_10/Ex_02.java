@@ -52,6 +52,6 @@ public class Ex_02
 			}
 			i++;
 		}
-		return equation;
+		system.out.println(equation);
 	}
 }
