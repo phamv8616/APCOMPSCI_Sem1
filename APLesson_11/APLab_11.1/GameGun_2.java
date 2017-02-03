@@ -58,7 +58,7 @@ public class GameGun_2
 			}
 			
 			output += health[i];
-			System.out.println(output);
 		}
+			System.out.println(output);		
 	}
 }

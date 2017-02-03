@@ -19,7 +19,7 @@ public class Strings
 		{
 			for(int j = 0; j < words[i].length; j++)
 			{
-				System.out.println("\n" + words[i][j]);
+				System.out.print(words[i][j]);
 			}
 			System.out.println();
 		}
