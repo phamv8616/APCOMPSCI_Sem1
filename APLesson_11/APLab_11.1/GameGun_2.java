@@ -13,7 +13,7 @@ public class GameGun_2
 		healthCount = 6;
 		health = new String[HEALTHLOAD];
 		
-		while (turn != "Q" & healthCount > 0)
+		while (!turn.equals("Q") & healthCount > 0)
 		{
 			System.out.println("Your turn! Hit Enter when ready: ");
 			turn = keyboard.nextLine();
