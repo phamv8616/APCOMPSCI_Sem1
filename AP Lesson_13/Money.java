@@ -1,17 +1,17 @@
 public abstract class Money
 {
 	private String name;
-	private double value;
+	private String value;
 	private int count;
 	
 	public Money()
 	{
 		this.name = "";
-		this.value = 0;
+		this.value = "";
 		this.count = 0;
 	}
 	
-	public Money(String n, double v)
+	public Money(String n, String v)
 	{
 		this.name = n;
 		this.value = v;
@@ -28,7 +28,7 @@ public abstract class Money
 		return name;
 	}
 	
-	public double getValue()
+	public String getValue()
 	{
 		return value;
 	}

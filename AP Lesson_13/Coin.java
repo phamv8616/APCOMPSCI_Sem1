@@ -8,7 +8,7 @@ public class Coin extends Money
 		this.weight = 0;
 	}
 	
-	public Coin(String n, double w, double v)
+	public Coin(String n, double w, String v)
 	{
 		super(n, v);
 		this.weight = w;

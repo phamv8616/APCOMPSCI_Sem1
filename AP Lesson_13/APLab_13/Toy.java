@@ -1,19 +1,22 @@
 public abstract class Toy
 {
-	private String name;
-	private int count;
+	//public or private?
+	public String name;
+	public int count;
 	
 	public Toy()
 	{
-		name = "";
-		count = 1;
+		this.name = "";
+		this.count = 1;
 	}
 	
 	public Toy(String n, int c)
 	{
-		name = n;
-		count = c;
+		this.name = n;
+		this.count = 1;
 	}
+	
+	public abstract String getType();
 	
 	public String getName()
 	{
@@ -25,10 +28,19 @@ public abstract class Toy
 		return count;
 	}
 	
-	public abstract String getType();
+	public void setName(String n)
+	{
+		this.name = n;
+	}
+	
+	public void setCount(int c)
+	{
+		this.count = c;
+	}
 	
 	public String toString()
 	{
-		return name + count;
+		return "Name: " + name + 
+				"\nCount: " + count + "\n";
 	}
 }

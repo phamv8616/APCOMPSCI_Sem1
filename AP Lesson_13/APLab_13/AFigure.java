@@ -1,8 +1,5 @@
 public class AFigure extends Toy
 {
-	private String name;
-	private int count;
-	
 	public AFigure()
 	{
 		super();
@@ -13,24 +10,13 @@ public class AFigure extends Toy
 		super(n, c);
 	}
 	
-	public String getName()
-	{
-		return name;
-	}
-	
-	public int getCount()
-	{
-		return count;
-	}
-	
-	public abstract String getType()
+	public String getType()
 	{
 		return "Action figure";
 	}
-	
+
 	public String toString()
 	{
-		return "Name: " + name +
-				"Count: " + count;				
+		return super.toString();			
 	}
 }

@@ -5,8 +5,8 @@ public class CountingMachine
 {
 	public static void main(String[]args)
 	{
-		ArrayList<Money> inventory = new ArrayList<~>();
-		
+		double total = 0;
+		ArrayList<Money> inventory = new ArrayList<Money>();
 		inventory.add(new Coin("Penny", "2.5g", 0.01));
 		inventory.add(new Coin("Nickel", "5.0g", 0.05));
 		inventory.add(new Coin("Dime", "2.268g", 0.10));
