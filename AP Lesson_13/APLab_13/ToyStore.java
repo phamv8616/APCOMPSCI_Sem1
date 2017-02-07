@@ -1,6 +1,8 @@
+import java.util.ArrayList;
 public class ToyStore
 {
-	private ArrayList<String> 
+	private ArrayList<Toy> ts = new ArrayList<Toy>();
+	
 	public static void main(String[]args)
 	{
 		public ToyStore()
@@ -13,7 +15,7 @@ public class ToyStore
 			
 		}
 		
-		public void loadToys()
+		public void loadToys(ArrayList <Toys> ts)
 		{
 			
 		}
@@ -25,6 +27,7 @@ public class ToyStore
 		
 		public getMostFrequentToy()
 		{
+			
 			return
 		}
 		
