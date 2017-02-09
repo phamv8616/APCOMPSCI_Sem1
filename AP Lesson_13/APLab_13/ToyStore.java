@@ -2,39 +2,43 @@ import java.util.ArrayList;
 
 public class ToyStore
 {
-	private ArrayList<Toy> ts = new ArrayList<Toy>();
+	private ArrayList<Toy> toyList = new ArrayList<Toy>();
 	
 	public static void main(String[]args)
 	{
+		
 		public ToyStore()
-		{
-			ArrayList<Toy> ts = new ArrayList<Toy>();			
+		{		
 		}
 		
 		public ToyStore()
 		{
-			
 		}
 		
-		public void loadToys(ArrayList <Toys> ts)
+		public void loadToys(ArrayList <Toy> ts)
 		{
-			//ts.split
+			String [] toys = ts.split(", ");
 			for ( int = 0; toys.size(); i++)
 			{
-				
+				String name = toys[i];
+				String type = toys[i+1];
+				if (return = null)
+				{
+					toyList.add(new Toy()
+				}
 			}
 		}
 		
-		public  getThatToy( String nm)
+		public  getThatToy(String nm)
 		{
-			for( toy : toyList)
+			for( toy: toyList)
 			{
 				if (name == nm)
 				{
 					return toy;
 				}
 			}
-			return null
+			return null;
 		}
 		
 		public getMostFrequentToy()
@@ -46,7 +50,7 @@ public class ToyStore
 				if (max < //countofthetoy)
 					
 			}
-			return
+			return name;
 		}
 		
 		public getMostFrequentType()
@@ -65,6 +69,7 @@ public class ToyStore
 					figures++;
 				}
 			}
+			
 			if ( cars > figures)
 			{
 				return "Cars";
