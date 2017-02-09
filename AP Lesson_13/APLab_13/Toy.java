@@ -1,8 +1,7 @@
 public abstract class Toy
 {
-	//public or private?
-	public String name;
-	public int count;
+	private String name;
+	private int count;
 	
 	public Toy()
 	{
@@ -10,22 +9,10 @@ public abstract class Toy
 		this.count = 1;
 	}
 	
-	public Toy(String n, int c)
+	public Toy(String n)
 	{
 		this.name = n;
 		this.count = 1;
-	}
-	
-	public abstract String getType();
-	
-	public String getName()
-	{
-		return name;
-	}
-	
-	public int getCount()
-	{
-		return count;
 	}
 	
 	public void setName(String n)
@@ -38,9 +25,20 @@ public abstract class Toy
 		this.count = c;
 	}
 	
+	public String getName()
+	{
+		return name;
+	}
+	
+	public int getCount()
+	{
+		return count;
+	}
+	
+	public abstract String getType();
+	
 	public String toString()
 	{
-		return "Name: " + name + 
-				"\nCount: " + count + "\n";
+		return "[" + name + "] [" + count + "]\n";
 	}
 }
