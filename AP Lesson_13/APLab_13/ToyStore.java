@@ -1,75 +1,88 @@
 import java.util.ArrayList;
-
 public class ToyStore
 {
-	private ArrayList<Toy> toyList = new ArrayList<Toy>();
-	
-	public static void main(String[]args)
-	{
+	private ArrayList<Toy> toyList;
 		
 		public ToyStore()
 		{		
+			ArrayList<Toy> toyList = new ArrayList<Toy>();
 		}
 		
-		public ToyStore()
+		public ToyStore(String ts)
 		{
+			ArrayList<Toy> toyList = new ArrayList<Toy>();	
+			loadToys(ts);
 		}
 		
-		public void loadToys(ArrayList <Toy> ts)
+		public void loadToys (String ts)
 		{
 			String [] toys = ts.split(", ");
-			for ( int = 0; toys.size(); i++)
+			for ( int i = 0; toys.size; i++)
 			{
-				String name = toys[i];
-				String type = toys[i+1];
-				if (return = null)
+				
+				if (getThatToy(toys[i]).equals(null))
 				{
-					toyList.add(new Toy()
+					if (Toy.getType().equals("Car"))
+					{
+						toyList.add(new Car(toys[i]));
+					}
+					
+					if (toys.getType().equals("AF"))
+					{
+						toyList.add(new AFigure(toys[i]));
+					}
+					else
+					{
+						toy.setCount();
+					}
 				}
 			}
 		}
 		
-		public  getThatToy(String nm)
+		public String getThatToy (String nm)
 		{
-			for( toy: toyList)
+			for( Toy toy: toyList)
 			{
-				if (name == nm)
+				if (Toy.getName().equals(nm))
 				{
-					return toy;
+					return Toy;
 				}
 			}
+			
 			return null;
 		}
 		
-		public getMostFrequentToy()
+		public String getMostFrequentToy()
 		{
 			String name = "";
-			int max = Integer.MIN_VALUE
-			for( toy : toyList)
+			int max = Integer.MIN_VALUE;
+			for( Toy toy : toyList)
 			{
-				if (max < //countofthetoy)
-					
+				if (max < Toy.getCount())
+				{
+					max = Toy.getCount();
+					name = Toy.getName();
+				}
 			}
 			return name;
 		}
 		
-		public getMostFrequentType()
+		public String getMostFrequentType()
 		{
 			int cars = 0;
 			int figures = 0;
 			
-			for (toy : toyList)
+			for (Toy toy : toyList)
 			{
-				if()
+				if(toy.getType().equals("Car"))
 				{
 					cars++;
 				}
-				if()
+				if(toy.getType().equals("AF"))
 				{
 					figures++;
 				}
 			}
-			
 			if ( cars > figures)
 			{
 				return "Cars";
@@ -92,4 +105,3 @@ public class ToyStore
 		}
 		
 	}
-}
