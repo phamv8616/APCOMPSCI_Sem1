@@ -5,9 +5,9 @@ public class XBox extends Console
 		super();
 	}
 	
-	public XBox(String p)
+	public XBox(String p, String c)
 	{
-		super(p);
+		super(p,c);
 	}
 	
 	public String getController()
