@@ -15,5 +15,10 @@ public class AFigure extends Toy
 		return "Action figure";
 	}
 	
+	public String toString()
+	{
+		return super.toString();
+	}
+	
 
 }

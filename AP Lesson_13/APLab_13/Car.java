@@ -15,5 +15,10 @@ public class Car extends Toy
 		return "Car";
 	}
 	
+	public String toString()
+	{
+		return super.toString();
+	}
+	
 
 }
