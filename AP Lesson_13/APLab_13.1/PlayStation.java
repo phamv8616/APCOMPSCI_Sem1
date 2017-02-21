@@ -5,9 +5,9 @@ public class PlayStation extends Console
 		super();
 	}
 	
-	public PlayStation(String p)
+	public PlayStation(String p, String c)
 	{
-		super(p);
+		super(p, c);
 	}
 	
 	public String getController()

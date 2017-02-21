@@ -20,9 +20,9 @@ public abstract class Console extends GameSystem
 	
 	public String toString()
 	{
-		return "Platform: [" + platform + "]" + 
-				"Serial# : [" + serialNo + "]" +
-				"Controller: [" + controller + "]";
+		return "Platform: " + platform +  
+				"Serial# : " + serialNo + 
+				"Controller: " + controller +;
 	}
 	
 }

@@ -1,13 +1,16 @@
-public class PC extends GameSystem
+public abstract class PC extends GameSystem
 {
+	private String device;
 	public PC()
 	{
 		super();
+		device = "";
 	}
 	
-	public PC(String p, String c)
+	public PC(String p, String d)
 	{
-		super(p, c);
+		super(p);
+		device = d;
 	}
 	
 	public String systemInput()
@@ -16,6 +19,8 @@ public class PC extends GameSystem
 	}
 	
 	public abstract String getPlatform();
+	
+	public abstract String getDevice();
 	
 	public String toString()
 	{
