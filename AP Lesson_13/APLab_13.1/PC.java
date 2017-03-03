@@ -24,8 +24,8 @@ public abstract class PC extends GameSystem
 	
 	public String toString()
 	{
-		return "Platform: [" + platform + "]" + 
-				"Serial# : [" + serialNo + "]" +
-				"System Input: [" + device + "]";
+		return "Platform: " + platform + 
+				"Serial# : " + serialNo + 
+				"System Input: " + device;
 	}	
 }

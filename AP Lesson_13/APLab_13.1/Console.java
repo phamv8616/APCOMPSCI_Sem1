@@ -22,7 +22,7 @@ public abstract class Console extends GameSystem
 	{
 		return "Platform: " + platform +  
 				"Serial# : " + serialNo + 
-				"Controller: " + controller +;
+				"Controller: " + controller;
 	}
 	
 }
