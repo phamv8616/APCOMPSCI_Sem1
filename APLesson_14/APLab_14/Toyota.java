@@ -14,9 +14,9 @@ public class Toyota implements Location
 		location[1] = Double.parseDouble(locs[1]);		
 	}
 	
-	public getID()
+	public int getID()
 	{
-		
+		return (int)(Math.random)* 100000;
 	}
 	
 	public void move(double x, double y)
