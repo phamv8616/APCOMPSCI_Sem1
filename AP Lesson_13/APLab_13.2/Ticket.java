@@ -1,18 +1,12 @@
-public class Ticket
+public abstract class Ticket 
 {
-	public int serialNo;
-	public double price;
-
+	private int serialNo;
+	private int price;
+	
 	public Ticket()
 	{
-		serialNo = (int)(Math.random()*1000000);
+		serialNo = (int)(Math.random() *1000000);
 		price = 0;
-	}
-	
-	public Ticket(int s, double p)
-	{
-		serialNo = s;
-		price = p;
 	}
 	
 	public int getSerialNo()
@@ -20,12 +14,11 @@ public class Ticket
 		return serialNo;
 	}
 	
-	public abstract double getPrice();
+	public abstract int getPrice();
 	
 	public String toString()
 	{
-		return "Serial#: " + serialNo +
-				"Price: " + price;
+		return "\nSerial# : " + getSerialNo() +
+				"\nPrice : " + getPrice();
 	}
-	
 }

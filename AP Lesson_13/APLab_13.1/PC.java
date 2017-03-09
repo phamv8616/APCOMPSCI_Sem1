@@ -1,16 +1,8 @@
-public abstract class PC extends GameSystem
+public class PC extends GameSystem
 {
-	private String device;
-	public PC()
+	public String getPlatform()
 	{
-		super();
-		device = "";
-	}
-	
-	public PC(String p, String d)
-	{
-		super(p);
-		device = d;
+		return "PC";
 	}
 	
 	public String systemInput()
@@ -18,14 +10,11 @@ public abstract class PC extends GameSystem
 		return "Keyboard and Mouse";
 	}
 	
-	public abstract String getPlatform();
-	
-	public abstract String getDevice();
-	
 	public String toString()
 	{
-		return "Platform: " + platform + 
-				"Serial# : " + serialNo + 
-				"System Input: " + device;
-	}	
+		return "Platform: " + getPlatform() +
+				"Serial# : " + getSerialNo() + 
+				"System Input :" + systemInput();
+	}
+
 }

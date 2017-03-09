@@ -1,18 +1,18 @@
-public class GameSystem
+public class GameSystem 
 {
-	public String platform;
-	public int serialNo;
-	
+	private String platform;
+	private int serialNo;
 	
 	public GameSystem()
 	{
 		platform = "";
 		serialNo = 0;
 	}
+	
 	public GameSystem(String p)
 	{
 		platform = p;
-		serialNo = (int)(Math.random()*1000000);
+		serialNo = (int)(Math.random() * 1000000);
 	}
 	
 	public String getPlatform()
