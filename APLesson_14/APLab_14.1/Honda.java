@@ -4,7 +4,7 @@ public class Honda extends Car
 	
 	public Honda()
 	{
-		
+		super();
 	}
 	
 	public Honda(double[] loc)
