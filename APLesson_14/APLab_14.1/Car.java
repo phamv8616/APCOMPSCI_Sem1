@@ -1,7 +1,7 @@
 public class Car implements Location
 {
 	private double[] location;
-	public final int ID;
+	public int ID;
 	
 	public Car()
 	{

@@ -11,7 +11,8 @@ public class Satellite
 
 
        double[] home = {0, 0};
-
+	   double[] one = {(int)(Math.random() * 100)+ 1,(int)(Math.random() * 100)+ 1};
+	   double[] two = {(int)(Math.random() * 100)+ 1,(int)(Math.random() * 100)+ 1};
 
        String printout = "\n\n" +
                "==========================";
