@@ -20,7 +20,7 @@ public class Satellite
 
        for (Location l : locate)
        {
-           printout += "\nAfter " + l.getID() + " Moved" + "\nNew Location: " + "(" + getLocation(l.getLoc()) + ")\n";
+           printout += "\nAfter " + l.getID() + " Moved ( " + ", " + " )" + "\nNew Location: " + "(" + getLocation(l.getLoc()) + ")\n";
        }
 
 
