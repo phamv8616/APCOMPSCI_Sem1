@@ -79,19 +79,18 @@ public class Magpie2
 	 * ========================================================= */
 	private int findKeyword(String statement, String goal, int startPos)
 	{
-		String phrase = "";
-		statement.trim();
-		statement.toLowerCase();
-		int psn = phrase.indexOf;
+		String phrase = statement.trim();
+		phrase = phrase.toLowerCase();
+		int psn = 0;
 		while(psn >= 0)
 		{
 			if (psn >0)
 			{
-				
+				before =
 			}
 			else
 			{
-				
+				after = 
 			}
 		}
 		/* New String variable phrase = a more searchable version of statement.
@@ -131,6 +130,7 @@ public class Magpie2
 	private int findKeyword(String statement, String goal)
 	{
 		//set startPos to 0 if not specified
+		int startPos = 0;
 		return findKeyword(statement, goal, 0);
 	}
 
