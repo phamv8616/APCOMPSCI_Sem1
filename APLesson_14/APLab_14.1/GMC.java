@@ -1,18 +1,8 @@
 public class GMC extends Car
 {
-	private double x;
-	private double y;
-	
-	public GMC()
+	public GMC (double q, double w)
 	{
 		super();
-		x = 0;
-		y = 0;
+		this.move(q, w);
 	}
-	
-	public GMC(double xx, double yy)
-	{
-		x = xx;
-		y = yy;
-	}	
 }

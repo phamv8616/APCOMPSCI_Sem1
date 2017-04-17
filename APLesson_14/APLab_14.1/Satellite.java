@@ -1,4 +1,4 @@
-import java.util.ArrayList;
+import java.util.*;
 public class Satellite
 {
    public static void main(String[]args)
@@ -11,16 +11,18 @@ public class Satellite
 
 
        double[] home = {0, 0};
-	   double[] one = {(int)(Math.random() * 100)+ 1,(int)(Math.random() * 100)+ 1};
-	   double[] two = {(int)(Math.random() * 100)+ 1,(int)(Math.random() * 100)+ 1};
 
        String printout = "\n\n" +
-               "==========================";
+       "==========================";
 
 
        for (Location l : locate)
        {
-           printout += "\nAfter " + l.getID() + " Moved ( " + ", " + " )" + "\nNew Location: " + "(" + getLocation(l.getLoc()) + ")\n";
+    	   double xMove = Math.round(((Math.random()*100) + 1) * 100.00)/100.00;
+    	   double yMove = Math.round(((Math.random()*100) + 1) * 100.00)/100.00;
+    	   printout += "\nAfter " + l.getID() + " Moved from (" +getLocation(l.getLoc()) + ")";
+    	   ((Car)l).move(xMove, 2*yMove);
+    	   printout += "\nNew Location: (" + getLocation(l.getLoc()) + ")\n\n";
        }
 
 
@@ -30,7 +32,7 @@ public class Satellite
 
        for (Location l : locate)
        {
-           printout += "\nDistance for " + l.getID() + ": (" + getDistance(l.getLoc(), home)+ ")";
+           printout += "\nto " + l.getID() + ": (" + Math.round((getDistance(l.getLoc(), home)*100.00))/100.00 + ")";
        }
 
 
