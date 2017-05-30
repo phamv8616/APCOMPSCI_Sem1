@@ -57,7 +57,7 @@ public class PictureTester
     swan.edgeDetection(10);
     swan.explore();
   }
-  
+
   /** Method to test keepOnlyBlue */
   public static void testKeepOnlyBlue()
   {
@@ -116,6 +116,7 @@ public class PictureTester
   }
   
   
+
   /** Main method for testing.  Every class can have a main
     * method in Java */
   public static void main(String[] args)
@@ -123,7 +124,7 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
-    //testZeroBlue();
+    testZeroBlue();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
@@ -141,7 +142,13 @@ public class PictureTester
     // testCollage();
 	// testMyCollage();
     //testCopy();
-    testEdgeDetection();
+    //testMirrorTemple();
+    //testMirrorArms();
+    //testMirrorGull();
+    //testMirrorDiagonal();
+    //testCollage();
+    //testCopy();
+    //testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();

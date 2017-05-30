@@ -11,6 +11,7 @@ public class IntArrayWorker
     matrix = theMatrix;
   }
   
+<<<<<<< HEAD
   public int getCount(int num)
   {
 	  int count = 0;
@@ -58,6 +59,8 @@ public class IntArrayWorker
       return total;
   }
   
+=======
+>>>>>>> origin/master
   /**
    * Method to return the total 
    * @return the total of the values in the array
@@ -145,4 +148,25 @@ public class IntArrayWorker
       }
     }
   }
+<<<<<<< HEAD
+=======
+  
+  public int getCount(int number)
+  {
+      int count = 0;
+      for (int[] rowArray : matrix)
+      {
+          for (int i : rowArray)
+          {
+              if (i == number)
+              {
+                  count++;
+              }
+          }
+      }
+      
+      return count;
+  }
+ 
+>>>>>>> origin/master
 }

@@ -7,14 +7,14 @@ public class PC extends GameSystem
 	
 	public String systemInput()
 	{
-		return "Keyboard and Mouse";
+		return " Keyboard and Mouse";
 	}
 	
 	public String toString()
 	{
-		return "Platform: " + getPlatform() +
-				"Serial# : " + getSerialNo() + 
-				"System Input :" + systemInput();
+		return "\nPlatform: " + getPlatform() +
+				"\nSerial# : " + getSerialNo() + 
+				"\nSystem Input :" + systemInput();
 	}
 
 }

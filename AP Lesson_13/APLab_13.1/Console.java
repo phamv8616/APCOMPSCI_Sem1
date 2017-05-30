@@ -10,12 +10,14 @@ public abstract class Console extends GameSystem
 	{
 		super(p);
 	}
+
+	abstract String getController();
 	
 	public String toString()
 	{
-		return "Platform: " + getPlatform() + 
-				"Serial#: " + getSerial() +
-				"Controller: " + getController();
+		return "\nPlatform: " + getPlatform() + 
+				"\nSerial#: " + super.getSerialNo() +
+				"\nController: " + getController();
 	}
 
 }

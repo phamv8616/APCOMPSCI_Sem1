@@ -6,13 +6,12 @@ public class GameSystem
 	public GameSystem()
 	{
 		platform = "";
-		serialNo = 0;
+		serialNo = (int)(Math.random() * 1000000);
 	}
 	
 	public GameSystem(String p)
 	{
 		platform = p;
-		serialNo = (int)(Math.random() * 1000000);
 	}
 	
 	public String getPlatform()
