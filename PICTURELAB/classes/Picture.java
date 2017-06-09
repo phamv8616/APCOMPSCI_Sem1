@@ -97,7 +97,7 @@ public class Picture extends SimplePicture
       }
     }
   }
-<<<<<<< HEAD
+
  
   /** Method to keep only blue */ 
   public void keepOnlyBlue()
@@ -145,8 +145,7 @@ public class Picture extends SimplePicture
 	  }
   }
   
-=======
->>>>>>> origin/master
+
   
   /** Method that mirrors the picture around a 
     * vertical mirror in the center of the picture
@@ -168,7 +167,7 @@ public class Picture extends SimplePicture
     } 
   }
   
-<<<<<<< HEAD
+
     public void mirrorVerticalRightToLeft()
     {
         Pixel[][] pixels = this.getPixels2D();
@@ -224,8 +223,7 @@ public class Picture extends SimplePicture
 	
 
   
-=======
->>>>>>> origin/master
+
   /** Mirror just part of a picture of a temple */
   public void mirrorTemple()
   {
@@ -241,17 +239,17 @@ public class Picture extends SimplePicture
       // loop from 13 to just before the mirror point
       for (int col = 13; col < mirrorPoint; col++)
       {
-<<<<<<< HEAD
+
         count++;
-=======
+
         
->>>>>>> origin/master
+
         leftPixel = pixels[row][col];      
         rightPixel = pixels[row]                       
                          [mirrorPoint - col + mirrorPoint];
         rightPixel.setColor(leftPixel.getColor());
       }
-<<<<<<< HEAD
+
 	  System.out.println(count);
     }
   }
@@ -308,48 +306,14 @@ public class Picture extends SimplePicture
         leftPixel = pixels[row][mirrorPoint - col + mirrorPoint/3];
         leftPixel.setColor(rightPixel.getColor());
       }
-=======
->>>>>>> origin/master
+
     }
   }
   
-  /** copy from the passed fromPic to the
-    * specified startRow and startCol in the
-    * current picture
-    * @param fromPic the picture to copy from
-    * @param startRow the start row to copy to
-    * @param startCol the start col to copy to
-    */
-<<<<<<< HEAD
-	
-	
-	
-  // public void copy(Picture fromPic, 
-                 // int startRow, int startCol)
-  // {
-    // Pixel fromPixel = null;
-    // Pixel toPixel = null;
-    // Pixel[][] toPixels = this.getPixels2D();
-    // Pixel[][] fromPixels = fromPic.getPixels2D();
-    // for (int fromRow = 0, toRow = startRow; 
-         // fromRow < fromPixels.length &&
-         // toRow < toPixels.length; 
-         // fromRow++, toRow++)
-    // {
-      // for (int fromCol = 0, toCol = startCol; 
-           // fromCol < fromPixels[0].length &&
-           // toCol < toPixels[0].length;  
-           // fromCol++, toCol++)
-      // {
-        // fromPixel = fromPixels[fromRow][fromCol];
-        // toPixel = toPixels[toRow][toCol];
-        // toPixel.setColor(fromPixel.getColor());
-      // }
-    // }   
-  // }
-  
-=======
->>>>>>> origin/master
+
+
+		
+
   public void copy(Picture fromPic, 
                  int startRow, int startCol)
   {
@@ -373,26 +337,9 @@ public class Picture extends SimplePicture
       }
     }   
   }
-<<<<<<< HEAD
+
   
-  public void copyTwo(Picture fromPic, int startRow, int startCol, int endrow, int endCo)
-  {
-	  Pixel fromPixel = null;
-	  Pixel toPixel = null;
-	  Pixel[][] toPixels = this.getPixels2D();
-	  Pixel[][] fromPixels = fromPic.getPixels2D();
-	  for(int fromRow = 0, toRow = startRow; fromRow < fromPixels.length && toRow < toPixels.length; fromRow++, toRow++)
-	  {
-		  for (int fromCol = 0, toCol = startCol; fromCol < fromPixels[0].length && toCol < toPixels[0].length; fromCol++, toCol++)
-		  {
-			  fromPixel = fromPixels[fromCol][fromRow];
-			  toPixel = toPixels[toCol][toRow];
-			  toPixel.setColor(fromPixel.getColor());
-		  }
-	  }
-  }
-=======
->>>>>>> origin/master
+
 
   /** Method to create a collage of several pictures */
   public void createCollage()
@@ -411,7 +358,7 @@ public class Picture extends SimplePicture
     this.write("collage.jpg");
   }
   
-<<<<<<< HEAD
+
   public void myCollage()
   {
 	  Picture smallSwan = new Picture("smallSwan.jpg");
@@ -438,13 +385,12 @@ public class Picture extends SimplePicture
 	  this.write("myCollage,jpg");
   }
   
-=======
->>>>>>> origin/master
+
   
   /** Method to show large changes in color 
     * @param edgeDist the distance for finding edges
     */
-<<<<<<< HEAD
+
   // public void edgeDetection(int edgeDist)
   // {
     // Pixel leftPixel = null;
@@ -471,39 +417,37 @@ public class Picture extends SimplePicture
     // }
   // }
   
-=======
->>>>>>> origin/master
+
   public void edgeDetection(int edgeDist)
   {
     Pixel leftPixel = null;
     Pixel rightPixel = null;
-<<<<<<< HEAD
+
     Pixel topPixel = null;
     Pixel bottomPixel = null;
-    
-    Pixel[][] pixels = this.getPixels2D();
-    for (int row = 0; row < pixels.length - 1; row++)
-=======
+ 
+
     Pixel[][] pixels = this.getPixels2D();
     Color rightColor = null;
+	Color topColor = null;
     for (int row = 0; row < pixels.length; row++)
->>>>>>> origin/master
+
     {
       for (int col = 0; 
            col < pixels[0].length-1; col++)
       {
         leftPixel = pixels[row][col];
         rightPixel = pixels[row][col+1];
-<<<<<<< HEAD
+
         topPixel = pixels[row][col];
         bottomPixel = pixels[row + 1][col];
         if (leftPixel.colorDistance(rightPixel.getColor()) > edgeDist ||
             topPixel.colorDistance(bottomPixel.getColor()) > edgeDist)
-=======
+
         rightColor = rightPixel.getColor();
         if (leftPixel.colorDistance(rightColor) > 
             edgeDist)
->>>>>>> origin/master
+
           leftPixel.setColor(Color.BLACK);
         else
           leftPixel.setColor(Color.WHITE);
@@ -511,7 +455,7 @@ public class Picture extends SimplePicture
     }
   }
   
-<<<<<<< HEAD
+
  //second edge detection method
 	// public void edgeDetection2(int edgeDist)
 	// {
@@ -533,27 +477,24 @@ public class Picture extends SimplePicture
 			// }
 		// }
 	// }
-=======
->>>>>>> origin/master
+
   
   /* Main method for testing - each class in Java can have a main 
    * method 
    */
   public static void main(String[] args) 
   {
-<<<<<<< HEAD
+
+
     Picture b = new Picture("beach.jpg");
-=======
-    Picture b = new Picture("husky.jpg");
->>>>>>> origin/master
+
     b.explore();
     b.zeroBlue();
     b.explore();
   }
   
-<<<<<<< HEAD
+
 } 
-// this } is the end of class Picture, put all new methods before this
-=======
-} // this } is the end of class Picture, put all new methods before this
->>>>>>> origin/master
+
+
+

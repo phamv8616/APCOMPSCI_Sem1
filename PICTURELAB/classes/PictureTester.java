@@ -115,6 +115,13 @@ public class PictureTester
 	  seagull.explore();
   }
   
+  public static void testCopy()
+  {
+	  Picture beach = new Picture ("beach.jpg");
+	  beach.copy(beach, 220, 300);
+	  beach.explore();
+  }
+  
   
 
   /** Main method for testing.  Every class can have a main
@@ -147,8 +154,8 @@ public class PictureTester
     //testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
-    //testCopy();
-    testEdgeDetection();
+    testCopy();
+    // testEdgeDetection();
     //testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();

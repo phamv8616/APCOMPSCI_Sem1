@@ -1,4 +1,3 @@
-
 import java.lang.Math;
 
 public class Shuffler {
@@ -16,7 +15,7 @@ public class Shuffler {
             perfectShuffle(values1);
             System.out.print("  " + j + ":");
             for (int k = 0; k < values1.length; k++) {
-                System.out.println(" ", values1[k]);
+                System.out.print(" " + values1[k]);
             }
             System.out.println();
         }
@@ -29,7 +28,7 @@ public class Shuffler {
             selectionShuffle(values2);
             System.out.print("  " + j + ":");
             for (int k = 0; k < values2.length; k++) {
-                System.out.println(" %", values2[k]);
+                System.out.print(" " + values2[k]);
             }
             System.out.println();
         }
@@ -44,7 +43,7 @@ public class Shuffler {
 		int mid = (values.length)/2;
 		
 		int shuffledPos = 0;
-		for(int k =0; k<middle;k++){
+		for(int k = 0; k < mid; k++){
 			shuffled[shuffledPos] = values[k];
 			shuffledPos +=2;
 		}
@@ -63,11 +62,11 @@ public class Shuffler {
 
 
     public static void selectionShuffle(int[] values) {
-        for( int k = VALUE_COUNT - 1; k >= 0; k-- ) {
+        for( int k = values.length - 1; k > 0; k-- ) {
             int r = (int)(Math.random() * k);
-            int tmp = values[r];
+            int t = values[r];
             values[r] = values[k];
-            values[k] = tmp;
+            values[k] = t;
         }
     }
 }
