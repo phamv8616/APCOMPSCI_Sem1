@@ -10,7 +10,7 @@ public class DeckTester {
 	public static void main(String[] args) {
 		/* *** TO BE IMPLEMENTED IN ACTIVITY 2 *** */
 		String[] rankv = new String[52];
-		String[] suitv = new String[52];
+		String[] suitv = {"Clubs", "Spades", "Diamonds", "Hearts"};
 		int[] pointValuev = new int[52];
 		for(int v = 0; v<52; v++){
 			String rank = "";
@@ -30,25 +30,7 @@ public class DeckTester {
 			else{
 				rank = Integer.toString((v+1)%13);
 			}
-			
-			if (v<13){
-				suit = "Hearts";
-			}
-			
-			else if (v<26){
-				suit = "Diamonds";
-			}
-			
-			else if (v<39){
-				suit = "Club";
-			}
-			
-			else{
-				suit = "Spades";
-			}
-			
 			rankv[v] = rank;
-			suitv[v] = suit;
 			pointValuev[v] = ((v+1)%13);
 		}
 		

@@ -50,7 +50,7 @@ public class PictureTester
 	  canvas.explore();
   }
   
-  /** Method to test edgeDetection */
+
   public static void testEdgeDetection()
   {
     Picture swan = new Picture("swan.jpg");
@@ -58,7 +58,7 @@ public class PictureTester
     swan.explore();
   }
 
-  /** Method to test keepOnlyBlue */
+ 
   public static void testKeepOnlyBlue()
   {
 	  Picture husky = new Picture("husky.jpg");
@@ -121,7 +121,7 @@ public class PictureTester
 	  beach.copy(beach, 220, 300);
 	  beach.explore();
   }
-  
+
   
 
   /** Main method for testing.  Every class can have a main
@@ -131,6 +131,7 @@ public class PictureTester
     // uncomment a call here to run a test
     // and comment out the ones you don't want
     // to run
+	testEdgeDetection();
     // testZeroBlue();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
@@ -154,8 +155,7 @@ public class PictureTester
     //testMirrorGull();
     //testMirrorDiagonal();
     //testCollage();
-    testCopy();
-    // testEdgeDetection();
+    //testCopy();
     //testEdgeDetection2();
     //testChromakey();
     //testEncodeAndDecode();
